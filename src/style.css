@@ -1,3 +1,43 @@
+body {
+  font-family: arial, sans-serif;
+  color: #878787;
+}
 ul {
+  margin: 0;
+}
+
+li {
   list-style: none;
+}
+
+.vanilla-weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.vanilla-weather-app {
+  padding: 20px;
+  border: 1px solid #878787;
+  border-radius: 5px;
+}
+
+.current-temperature {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.current-conditions {
+  font-size: 12px;
+  padding: 0;
+  line-height: 15px;
+}
+
+.location-time-description {
+  font-size: 16px;
+  padding: 0;
+  text-align: end;
+}
+
+small {
+  font-size: 12px;
 }
