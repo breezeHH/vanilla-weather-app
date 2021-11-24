@@ -11,39 +11,35 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Vanilla JS</title>
   </head>
   <body>
     <div class="container">
-      <div class="vanilla-weather-app-wrapper">
-        <div class="vanilla-weather-app">
-          <div class="row">
-            <div class="col">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
-              />
-              <span class="current-temperature">7</span>
-              <small>°C | F</small>
-            </div>
-            <div class="col-5">
-              <ul class="current-conditions">
-                <li>Precipitation: 3%</li>
-                <li>Humidity: 96%</li>
-                <li>Wind: 10 km/h</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul class="location-time-description">
-                <li>
-                  <strong>Hamburg</strong>
-                </li>
-                <li>Tuesday, 20:00</li>
-                <li>partly cloudy</li>
-              </ul>
-            </div>
+      <div class="weather-app">
+        <h1>Hamburg</h1>
+        <ul>
+          <li>Tuesday, 20:00</li>
+          <li>partly cloudy</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="Partly Cloudy"
+            />
+            7°C | F
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 3%</li>
+              <li>Humidity: 96%</li>
+              <li>Wind: 10 km/h</li>
+            </ul>
           </div>
         </div>
+
         <small>
           This project was coded by Kathrin and is
           <a
