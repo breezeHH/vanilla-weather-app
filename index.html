@@ -16,39 +16,51 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Hamburg</h1>
-        <ul>
-          <li>Tuesday, 20:00</li>
-          <li>partly cloudy</li>
-        </ul>
-
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Partly Cloudy"
-            />
-            7°C | F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>Hamburg</h1>
             <ul>
-              <li>Precipitation: 3%</li>
-              <li>Humidity: 96%</li>
-              <li>Wind: 10 km/h</li>
+              <li>Tuesday, 20:00</li>
+              <li>partly cloudy</li>
             </ul>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Partly Cloudy"
+                  class="float-start"
+                />
+                <div class="float-start">
+                  <strong>7</strong>
+                  <span class="units"
+                    >°C |
+                    <a href="#">°F</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 3%</li>
+                <li>Humidity: 96%</li>
+                <li>Wind: 10 km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <small>
+          This project was coded by Kathrin and is
+          <a
+            href="https://github.com/breezeHH/vanilla-weather-app"
+            target="_blank"
+          >
+            open-sourced on GitHub.</a
+          >
+        </small>
       </div>
-      <small>
-        This project was coded by Kathrin and is
-        <a
-          href="https://github.com/breezeHH/vanilla-weather-app"
-          target="_blank"
-        >
-          open-sourced on GitHub.</a
-        >
-      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
