@@ -9,6 +9,15 @@ function displayTemperature(response) {
 
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
+  let feelslikeElement = document.querySelector("#feels-like-temperature");
+  feelslikeElement.innerHTML = Math.round(response.data.main.feels_like);
+
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+
+  let windElement = document.querySelector("#wind-speed");
+  windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
 }
 
 let apiKey = "83d4ec1e65679a00b9602279433dcdb9";
