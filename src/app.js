@@ -54,8 +54,19 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
 }
 
-let apiKey = "83d4ec1e65679a00b9602279433dcdb9";
-let city = "Hamburg";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "83d4ec1e65679a00b9602279433dcdb9";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Hamburg");
+
+let form = document.querySelector("#search-form");
+addEventListener("submit", handleSubmit);
