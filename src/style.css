@@ -64,10 +64,6 @@ li:first-letter {
   text-decoration: none;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
